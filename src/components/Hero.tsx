@@ -13,15 +13,15 @@ const slides = [
     alt: "Shipping containers at an international port",
   },
   {
-    src: "https://images.pexels.com/photo/aerial-view-of-colorful-patchwork-fields-32047262/",
+    src: "https://images.pexels.com/photos/32047262/pexels-photo-32047262.jpeg?auto=compress&cs=tinysrgb&w=2400",
     alt: "Aerial view of agricultural farmland",
   },
   {
-    src: "https://images.pexels.comphoto/bustling-market-scene-with-various-spices-and-nuts-32542762/",
+    src: "https://images.pexels.com/photos/32542762/pexels-photo-32542762.jpeg?auto=compress&cs=tinysrgb&w=2400",
     alt: "Fresh produce ready for export",
   },
   {
-    src: "https://images.pexels.com/photo/wares-in-foils-on-pallets-in-warehouse-4487363/",
+    src: "https://images.pexels.com/photos/4487363/pexels-photo-4487363.jpeg?auto=compress&cs=tinysrgb&w=2400",
     alt: "Warehouse logistics and distribution",
   },
 ];
