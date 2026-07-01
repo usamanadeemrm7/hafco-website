@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1e1e1e;
+  background: #ffffff;
+}
+
+@layer base {
+  h1, h2, h3, h4 {
+    @apply font-display;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .section {
+    @apply px-6 sm:px-10 lg:px-16;
+  }
+
+  .section-inner {
+    @apply mx-auto max-w-content;
+  }
+
+  .eyebrow {
+    @apply font-label text-xs font-semibold uppercase tracking-[0.22em] text-brand-green-dark;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold tracking-wide transition-all duration-300 ease-out;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-red text-white shadow-soft hover:bg-brand-red-dark hover:-translate-y-0.5 hover:shadow-lifted focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red;
+  }
+
+  .btn-outline {
+    @apply btn border border-ink/15 bg-transparent text-ink hover:border-brand-red hover:text-brand-red hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-red;
+  }
+
+  .btn-ghost-light {
+    @apply btn border border-white/40 text-white hover:bg-white hover:text-brand-green-deep hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
+  }
+
+  .card-surface {
+    @apply rounded-xl2 border border-line bg-white shadow-soft transition-all duration-300 ease-out;
+  }
+}
+
+/* Route-line signature motif: an animated dashed path used in hero + stats */
+.route-line {
+  stroke-dasharray: 6 10;
+  animation: dash-flow 1.6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-line {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+::selection {
+  background: #e32227;
+  color: #ffffff;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
