@@ -17,7 +17,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl3 shadow-card">
               <Image
-                src="https://images.pexels.com/photo/two-men-inspecting-coffee-beans-at-farm-37306887/"
+                src="https://images.pexels.com/photos/37306887/pexels-photo-37306887.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="HAFCO team inspecting export-ready food commodities"
                 fill
                 className="object-cover"
